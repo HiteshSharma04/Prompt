@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d"></div>
+    
+</body>
+<style>
+    body{
+        background-color: green;
+        text-align: center;
+    }
+    div{
+        color: coral;
+        font-size: 200px;
+        border: 1px solid red;
+        box-shadow: 1px 1px 5px 5px orangered;
+        margin-top: 200px;
+    }
+</style>
+<script>
+    let d = document.getElementById("d")
+  
+    function promptUser() {
+        let userInput;
+        
+        do {
+            userInput = prompt("Please enter something:");
+        } while (!userInput);
+
+        if (userInput == "1234") {
+            d.innerHTML = "WELCOME"
+        } else {
+            promptUser();
+        }
+    }
+
+
+    promptUser();
+</script>
+
+</body>
+</html>
+
+
+</script>
+</html>
